@@ -1,12 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@700&display=swap');
 body {
-  background-color: black;
+  padding-top: 20px;
+  background-color: #050505;
+  color: #9500ffc2;
+  font-family: monospace;
+  background-image: linear-gradient(to bottom, transparent 95%, #360a5548 96%);
+  background-size: 100% 20px;
+  animation: scan 1s linear infinite;
 }
 
-h1 {
-  color: purple;
-  font-family: verdana;
+@keyframes scan {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 -20px;
+  }
 }
 
-p {
-  font-family: "Lucida Console";
+a {
+  color: #9500ffc2;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 40px;
+  font-family: 'Space Mono', monospace;
+  -webkit-text-stroke: 2px #AA33FF;
+}
+.logo a {
+  color: black;
+}
+.logo h1:first-of-type {
+  animation: rfly 2s ease-in-out forwards;
+}
+.logo h1:last-of-type {
+  animation: lfly 2s ease-in-out forwards;
+}
+
+.logo a {
+  font-size: 100px;
+  font-family: 'Bebas Neue', cursive;
+  animation: fade 3s ease-in-out forwards;
+  transform: translateY(55px);
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes rfly {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes lfly {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
