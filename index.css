@@ -1,78 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@700&display=swap');
+
 body {
-  padding-top: 20px;
-  background-color: #050505;
   color: #9500ffc2;
   font-family: monospace;
+  background-color: #050505;
   background-image: linear-gradient(to bottom, transparent 95%, #360a5548 96%);
   background-size: 100% 20px;
   animation: scan 1s linear infinite;
 }
-
 @keyframes scan {
-  0% {
-    background-position: 0 0;
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 -20px;
+    }
   }
-  100% {
-    background-position: 0 -20px;
-  }
-}
 
-a {
-  color: #9500ffc2;
-}
+  a {
+    position: relative;
+    color: #9500ffc2;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: #9500ffc2;
+    transition: height 0.3s;
+    z-index: -1;
+  }
+  
+  a:hover {
+    color: black;
+  }
+  
+  a:hover::before {
+    height: 100%;
+  }
+  
 
 .logo {
-  display: flex;
-  justify-content: center;
-  color: black;
-  font-size: 40px;
-  font-family: 'Space Mono', monospace;
-  -webkit-text-stroke: 2px #AA33FF;
-}
-.logo a {
-  color: black;
-}
-.logo h1:first-of-type {
-  animation: rfly 2s ease-in-out forwards;
-}
-.logo h1:last-of-type {
-  animation: lfly 2s ease-in-out forwards;
-}
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    color: black;
+    font-size: 40px;
+    font-family: 'Space Mono', monospace;
+    -webkit-text-stroke: 2px #AA33FF;
+  }
 
-.logo a {
-  font-size: 100px;
-  font-family: 'Bebas Neue', cursive;
-  animation: fade 3s ease-in-out forwards;
-  transform: translateY(55px);
-}
+ .logo p {
+   color: black;
+   font-size: 100px;
+   font-family: 'Bebas Neue', cursive;
+   animation: fade 4s ease-in-out forwards;
+   transform: translateY(-45px);
+ }
+ @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
-@keyframes fade {
-  from {
-    opacity: 0;
+ .logo h1:first-of-type {
+    animation: rfly 2s ease-in-out forwards;
   }
-  to {
-    opacity: 1;
+  @keyframes rfly {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
-}
+  .logo h1:last-of-type {
+    animation: lfly 2s ease-in-out forwards;
+  }
+  @keyframes lfly {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 
-@keyframes rfly {
-  from {
-    opacity: 0;
-    transform: translateX(-100px);
+  .cmd::after {
+    content: "_";
+    animation: cmd-typing 940ms steps(10) infinite;
   }
-  to {
-    opacity: 1;
-    transform: translateX(0);
+  
+  @keyframes cmd-typing {
+    from, to {
+      color: #9500ffc2;
+      background-color: black;
+    }
+    50% {
+      color: black;
+      background-color: #9500ffc2;
+    }
   }
-}
-@keyframes lfly {
-  from {
-    opacity: 0;
-    transform: translateX(100px);
+  
+  .projects {
+    color: #d4d4d4;
+    animation: dim 5s ease-in-out infinite;
   }
-  to {
-    opacity: 1;
-    transform: translateX(0);
+  @keyframes dim {
+    from, to {
+      color: #d4d4d4;
+    }
+    75% {
+      color: #333;
+    }
+    to {
+        color: #d4d4d4;
+    }
   }
-}
