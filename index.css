@@ -23,7 +23,6 @@ body {
     text-decoration: none;
     transition: color 0.3s;
   }
-  
   a::before {
     content: '';
     position: absolute;
@@ -34,15 +33,83 @@ body {
     transition: height 0.3s;
     z-index: -1;
   }
-  
   a:hover {
     color: black;
   }
-  
   a:hover::before {
     height: 100%;
   }
+
+  .id {
+    color: #ff0000;
+  }
+  .id::before {
+    background-color: #ff0000;
+  }
+  .id:hover {
+    color: black;
+  }
   
+  .mobile-text {
+    display: none;
+  }
+  
+  .bonk {
+    color: #AA33FF;
+  }
+  .bonk:hover {
+    color: transparent;
+  }
+  .bonk:hover::before {
+    color: black;
+    content: "Born March 9th";
+  }
+  
+
+.timed {
+  color: black;
+  background-color: #9500ffc2;
+  }
+
+.kominfudge {
+  color: #161ae0;
+}
+.kominfudge::before {
+  background-color:#080ba1;
+}
+.kominfudge:hover {
+  color: #ffffff;
+}
+
+.gdps {
+  color: #ffff00;
+}
+.gdps::before {
+  background-color:#ffbb00;
+}
+.gdps:hover {
+  color: #ffffff;
+}
+
+.dap {
+  color: #00c3ff;
+}
+.dap::before {
+  background-color:#0066ff;
+}
+.dap:hover {
+  color: #000000;
+}
+
+.playlister {
+  color: #555;
+}
+.playlister::before {
+  background-color:transparent;
+}
+.playlister:hover {
+  color: #000;
+}
 
 .logo {
     display: flex;
@@ -115,14 +182,14 @@ body {
   
   .projects {
     color: #d4d4d4;
-    animation: dim 5s ease-in-out infinite;
+    animation: dim 10s ease-in-out infinite;
   }
   @keyframes dim {
     from, to {
       color: #d4d4d4;
     }
     75% {
-      color: #333;
+      color: #444;
     }
     to {
         color: #d4d4d4;
