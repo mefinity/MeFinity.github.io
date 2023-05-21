@@ -16,5 +16,5 @@ currenttime();
 
 var timeupdate = window.setInterval(function() {
   currenttime();
-}, 20000);
+}, 1000);
 });
