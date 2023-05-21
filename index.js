@@ -13,4 +13,8 @@ settime.textContent = date.toLocaleString('en-US', {
 }
 
 currenttime();
+
+var timeupdate = window.setInterval(function() {
+  currenttime();
+}, 20000);
 });
