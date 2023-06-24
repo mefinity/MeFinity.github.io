@@ -1,160 +1,94 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geologica&display=swap');
 
 body {
-  color: #9500ffc2;
-  font-family: monospace;
-  background-color: #050505;
-  background-image: linear-gradient(to bottom, transparent 95%, #360a5548 96%);
-  background-size: 100% 20px;
-  animation: scan 1s linear infinite;
+  font-family: 'Geologica', sans-serif;
+  background-color: #010005;
+  color: #809bce;
 }
-@keyframes scan {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 0 -20px;
-    }
-  }
 
-  a {
-    position: relative;
-    color: #9500ffc2;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  a::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 0;
-    background-color: #9500ffc2;
-    transition: height 0.3s;
-    z-index: -1;
-  }
-  a:hover {
-    color: black;
-  }
-  a:hover::before {
-    height: 100%;
-  }
+span {
+  color: #AA33FF;
+}
 
-  .id {
-    color: #ff0000;
-  }
-  .id::before {
-    background-color: #ff0000;
-  }
-  .id:hover {
-    color: black;
-  }
-  
-  .mobile-text {
-    display: none;
-  }
-  
-  .bonk {
-    color: #AA33FF;
-  }
-  .bonk:hover {
-    color: transparent;
-  }
-  .bonk:hover::before {
-    color: black;
-    content: "Born March 9th";
-  }
-  
+.button {
+  background-color: transparent;
+  font-size: 15px;
+  color: #929292;
+  border: 2px solid #92a6cc;
+  border-radius: 20px;
+  padding: 16px 16px;
+  word-break: break-all;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  margin: 1px;
+}
 
-.timed {
+.button:hover,
+.button:active {
+  background-color: #92a6cc;
+  color: #000;
+}
+
+#yo span {
+  position: relative;
+  transition-duration: 0.2s;
+}
+
+#yo span::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #AA33FF;
+  transition: height 0.3s;
+  z-index: -1;
+}
+
+#yo span:hover {
+  color: transparent;
+}
+
+#yo span:hover::before {
   color: black;
-  background-color: #9500ffc2;
-  }
+  height: 100%;
+  content: "09/03/08.";
+}
 
-.logo {
-    display: flex;
-    justify-content: center;
-    height: 200px;
-    color: black;
-    font-size: 40px;
-    font-family: 'Space Mono', monospace;
-    -webkit-text-stroke: 2px #AA33FF;
-  }
+#base h3 {
+  font-size: 25px;
+}
 
- .logo p {
-   color: black;
-   font-size: 100px;
-   font-family: 'Bebas Neue', cursive;
-   animation: fade 4s ease-in-out forwards;
-   transform: translateY(-45px);
- }
- @keyframes fade {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
+#base a {
+  color: #5833ff;
+  text-decoration: none;
+}
 
- .logo h1:first-of-type {
-    animation: rfly 2s ease-in-out forwards;
-  }
-  @keyframes rfly {
-    from {
-      opacity: 0;
-      transform: translateX(-100px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
-  .logo h1:last-of-type {
-    animation: lfly 2s ease-in-out forwards;
-  }
-  @keyframes lfly {
-    from {
-      opacity: 0;
-      transform: translateX(100px);
-    }
-    to {
-      opacity: 1;
-      transform: translateX(0);
-    }
-  }
+#base a:hover,
+#base a:active {
+  color: #8400FF;
+}
 
-  .cmd::after {
-    content: "_";
-    animation: cmd-typing 940ms steps(10) infinite;
-  }
-  
-  @keyframes cmd-typing {
-    from, to {
-      color: #9500ffc2;
-      background-color: black;
-    }
-    50% {
-      color: black;
-      background-color: #9500ffc2;
-    } 100% {
-      color: #9500ffc2;
-      background-color: black;
-    }
-  }
-  
-  .projects {
-    color: #d4d4d4;
-    animation: dim 5s ease-in-out infinite;
-  }
-  @keyframes dim {
-    from, to {
-      color: #d4d4d4;
-    }
-    50% {
-      color: #888;
-    }
-    to {
-        color: #d4d4d4;
-    }
-  }
+.dead {
+  color: #1b1b1b;
+  text-decoration: line-through;
+}
+
+footer {
+  opacity: 85%;
+  text-align: center;
+  background-color: #020108;
+  border-color: #020108;
+  border-radius: 5px;
+  padding: 10px 10px;
+}
+
+#bb,
+#tr,
+#ga,
+#dv,
+#mic,
+#mics {
+  display: none;
+}

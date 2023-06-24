@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap');
+
+body {
+  color: violet;
+  font-family: 'Comic Neue', cursive;
+  background: #1ACBD2;
+  background: radial-gradient(at center, #1ACBD2, #F376B7);
+}
+
+.button {
+  background: #FF01F4;
+  background: linear-gradient(315deg, #FF01F4, #62EC47);
+  font-size: 15px;
+  color: #FFFF00;
+  border: 2px solid #FFFF00;
+  border-radius: 16px;
+  padding: 16px 16px;
+  word-break: break-all;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  margin: 1px;
+}
+
+.button:hover,
+.button:active,
+.mcs {
+  background-color: #FF01F4;
+  background: linear-gradient(135deg, #FF01F4, #62EC47);
+  color: transparent;
+}
+
+#base,
+#dv,
+#ga,
+#tr,
+#mics,
+.dvs,
+.trs,
+.gas {
+  display: none;
+}

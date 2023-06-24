@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica&display=swap');
+
+body {
+  font-family: 'Geologica', sans-serif;
+  background-color: #02021d;
+  color: #1100ff;
+}
+
+span {
+  color: #5f33ff;
+}
+
+.button {
+  background-color: transparent;
+  font-size: 15px;
+  color: #4f5bb9;
+  border: 2px solid #1100ff;
+  border-radius: 25px;
+  padding: 18px 18px;
+  word-break: break-all;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  margin: 1px;
+}
+
+.button:hover,
+.button:active {
+  background-color: #1100ff;
+  color: #000;
+}
+
+.mpro {
+  background-color: #1b1b2c33;
+  border-color: #1b1b2c33;
+  border-radius: 50px;
+  padding: 20px 20px;
+  margin-bottom: 30px;
+}
+
+.mpro a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #8133ff;
+  transition-duration: 1s;
+}
+
+.mpro h2 {
+  transition-duration: 5s;
+}
+
+.mpro:hover {
+  background-color: rgb(158, 34, 158);
+  border-color: rgb(158, 34, 158);
+  transition-duration: 40s;
+}
+
+.mpro:hover a {
+  color: #F3F;
+}
+
+.mpro:hover h2 {
+  color: #F3F;
+}
+
+#base,
+#tr,
+#ga,
+#dv,
+#mic {
+  display: none;
+}

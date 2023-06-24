@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@700&display=swap');
+
+body {
+  color: #9500ffc2;
+  font-family: monospace;
+  background-color: #050505;
+  background-image: linear-gradient(to bottom, transparent 95%, #360a5548 96%);
+  background-size: 100% 20px;
+  animation: scan 1s linear infinite;
+}
+@keyframes scan {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 -20px;
+    }
+  }
+
+  a {
+    position: relative;
+    color: #9500ffc2;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    background-color: #9500ffc2;
+    transition: height 0.3s;
+    z-index: -1;
+  }
+  a:hover {
+    color: black;
+  }
+  a:hover::before {
+    height: 100%;
+  }
+
+  .id {
+    color: #ff0000;
+  }
+  .id::before {
+    background-color: #ff0000;
+  }
+  .id:hover {
+    color: black;
+  }
+  
+  .mobile-text {
+    display: none;
+  }
+  
+  .bonk {
+    color: #AA33FF;
+  }
+  .bonk:hover {
+    color: transparent;
+  }
+  .bonk:hover::before {
+    color: black;
+    content: "Born March 9th";
+  }
+  
+
+.timed {
+  color: black;
+  background-color: #9500ffc2;
+  }
+
+.logo {
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    color: black;
+    font-size: 40px;
+    font-family: 'Space Mono', monospace;
+    -webkit-text-stroke: 2px #AA33FF;
+  }
+
+ .logo p {
+   color: black;
+   font-size: 100px;
+   font-family: 'Bebas Neue', cursive;
+   animation: fade 4s ease-in-out forwards;
+   transform: translateY(-45px);
+ }
+ @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+ .logo h1:first-of-type {
+    animation: rfly 2s ease-in-out forwards;
+  }
+  @keyframes rfly {
+    from {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .logo h1:last-of-type {
+    animation: lfly 2s ease-in-out forwards;
+  }
+  @keyframes lfly {
+    from {
+      opacity: 0;
+      transform: translateX(100px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  .cmd::after {
+    content: "_";
+    animation: cmd-typing 940ms steps(10) infinite;
+  }
+  
+  @keyframes cmd-typing {
+    from, to {
+      color: #9500ffc2;
+      background-color: black;
+    }
+    50% {
+      color: black;
+      background-color: #9500ffc2;
+    } 100% {
+      color: #9500ffc2;
+      background-color: black;
+    }
+  }
+  
+  .projects {
+    color: #d4d4d4;
+    animation: dim 5s ease-in-out infinite;
+  }
+  @keyframes dim {
+    from, to {
+      color: #d4d4d4;
+    }
+    50% {
+      color: #888;
+    }
+    to {
+        color: #d4d4d4;
+    }
+  }

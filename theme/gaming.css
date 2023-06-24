@@ -1,0 +1,50 @@
+@font-face {
+  font-family: 'Chakra Petch';
+  src: url('https://mefinity.eu.org/opera/ChakraPetch-Bold.ttf');
+}
+
+body {
+  font-family: "Chakra Petch", sans-serif;
+  background-color: #131019;
+  color: #8c7db0;
+}
+
+h1:first-of-type {
+  color: white;
+}
+
+span,
+a {
+  color: #FA1E4E;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF2E5B
+}
+
+.button {
+  border-color: transparent;
+  background-color: #FA1E4E;
+  color: #000;
+  font-size: 15px;
+  padding: 16px 16px;
+  text-align: center;
+  transition-duration: 0.4s;
+  margin: 2px;
+}
+
+.button:hover,
+.button:hover,
+.gas {
+  text-decoration: none;
+  background-color: #cc173e;
+}
+
+#base,
+#dv,
+#tr,
+#mic,
+#mics {
+  display: none;
+}

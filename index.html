@@ -3,62 +3,184 @@
 <html>
 
 <head>
- <title>Hello world!</title>
- <link rel="icon" href="logo.png">
- <link rel="stylesheet" href="index.css">
- <script src="index.js"></script>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <meta name="title" content="MeFinity's bio :3">
- <meta name="description"
-  content="The silliness has awoken">
+  <!-- Title -->
+  <title>Hello World!</title>
+  <link rel="icon" href="logo.png">
+  <!-- File Linking -->
+  <link type="text/css" rel="stylesheet" href="index.css" id="theme" />
+  <script src="index.js"></script>
+  <!--Purr-formance-->
+  <link rel="prefetch" href="/theme/dev.css">
+  <link type="text/css" rel="preconnect" href="/theme/dev.css">
+  <link rel="prefetch" href="/theme/gaming.css">
+  <link type="text/css" rel="preconnect" href="/theme/gaming.css">
+  <link rel="prefetch" href="/theme/translator.css">
+  <link type="text/css" rel="preconnect" href="/theme/translator.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com/">
+  <!--Font icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <script src="https://kit.fontawesome.com/c581e41cd8.js" crossorigin="anonymous"></script>
+  <!-- Accessibility -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Embedding -->
+  <meta name="title" content="MeFinity's bio :3">
+  <meta name="description" content="The silliness has awoken">
 </head>
 
 <body>
- <div class="logo">
-  <h1><</h1><p>M</p><h1>></h1>
- </div>
+  <div id="hl">
+    <h1 style="padding-top: 20px;">Hello there! I'm
+      <span>MeFinity</span>
+    </h1>
+    <div id="yo">
+      <h2>A <span>15 Year old</span> student from Indonesia<br>
+        Any/All | Male | Aromantic</h2>
+    </div>
+    <h3>It's currently <span id="time"></span> in my timezone</h3>
 
- <h2 class="cmd">> Hello World!</h2>
- <h1>I am MeFinity</h1>
- <h2>> <a class="bonk">A 15 Year old </a>&nbsp;student from Indonesia</h2>
- <h2>> Any/All | Male | Aromantic</h2>
- <h3>> It is currently <span id="time" class="timed"></span> in my timezone</h3>
+    <h2 style="margin-bottom: 10px;">I do stuff like:</h2>
+  </div>
 
- <h2>> I am trying to understand words that computers like,<br /> currently trying to comprehend Frontend stuff like <span style="color: rgb(255, 60, 0);" >HTML</span>, <span style="color:rgb(0, 102, 255)">CSS</span>, and <span style="color:rgb(255, 255, 0)">JS</span></h2>
+  <div style="margin: 10px;">
+    <button class="button dvs" onclick="dev()"><i class="fa-solid fa-laptop-code fa-xl">&nbsp;</i>Frontend
+      Developement</button>
+    <button class="button trs" onclick="tra()"><i class="fa-solid fa-earth-asia fa-lg">&nbsp;</i>Translation</button>
+    <button class="button gas" onclick="ga()"><i class="fa-solid fa-gamepad fa-lg">&nbsp;</i>Gaming</button>
+    <button class="button mcs" onclick="ms()"><i class="fa-solid fa-dumpster-fire fa-lg">&nbsp;</i>Miscelaneous</button>
+    <button class="button" id="mic" onclick="insanity()"><i class="fa-solid fa-dumpster-fire fa-lg">&nbsp;</i>MAKE THIS
+      LESS INSANE PLEASE</button>
+    <button id="bb" class="button" onclick="back()"><i class="fa-solid fa-arrow-right fa-lg">&nbsp;</i>Back</button>
+  </div>
 
- <h1 style="text-decoration: underline;">Accounts</h1>
-  <h2>> Discord: <a href="https://discord.com/users/603501958812401674">.Me.#0001</a></h2>
-  <h2>> Twitter: <a href="https://twitter.com/MeFinity">MeFinity</a></h2>
-  <h2>> Mastodon: <a href="https://mastodon.social/@mefinity">MeFinity</a>|<a class="id" href="https://mstdn.id/@mefinity">ID</a> </h2>
-  <h2>> Reddit: <a href="https://reddit.com/Me_Finity">Me_Finity</a></h2>
-  <h2 style="color: #333;">> Instagram: <a href="https://instagram.com/me_finity">me_finity</a> </h2>
-  <h2>> Youtube: <a href="https://youtube.com/@w.4">DoubleUFour</a></h2>
-  <h2 style="color: #333;">> Twitch: <a href="https://twitch.tv/me__infinity">me__infinity</a></h2>
-  <h2>> Github: <a href="https://github.com/MeFinity">MeFinity</a></h2>
-  <h2 style="color: #333;">> Gitlab: <a href="https://gitlab.com/MeFinity">MeFinity</a> </h2>
-  <h2>> Email: <a href="mailto:contact@mefinity.eu.org">contact@mefinity.eu.org</a></h2>
-  
- <h1 style="text-decoration: underline;">Main Projects</h1>
- <div class="projects">
-  <h2>> <a href="https://github.com/MeFinity/KominFudge">KominFudge</a> - A guide on how to access the Internet freely in Indonesia.</h2>
-  <h2>> <a href="https://meowgdps.eu.org">GDPS Fur-ified</a> - An unofficial GDPS 2.2 site by furries, for furries</h2>
- </div>
+  <div id="dv">
+    <h1>Frontend Development</h1>
+    <h2>I'm trying to understand words that computers
+      like.<br>Currently Learning:</h2>
+    <h2><a style="color: #e34f26;"><i class="fa-brands fa-html5 fa-xl"></i> HTML</a> | <a style="color: #4155b9;"><i class="fa-brands fa-css3-alt fa-xl"></i> CSS</a> | <a style="color: #f7df1e;"><i class="fa-brands fa-js fa-xl"></i>
+        Javascript</a> | <a style="color: #38bdf8;"><i style="font-size: 40px;" class="devicon-tailwindcss-plain"></i> TailwindCSS</a></h2>
+    <div class="pro">
+      <h2>You can find my stuff on <a href="https://github.com/MeFinity">Github</a> or <a href="https://gitlab.com/MeFinity">Gitlab</a></h2>
+    </div>
+    <h1>Projects</h1>
+    <h2>I have several projects im working on, check them out:</h2>
+    <div class="pro">
+      <h2><a href="https://mefinity.eu.org">nOpera</a> - A little documentation on why Opera is bad</h2>
+      <h2><a href="https://gdfurry.eu.org">Geometry Dash Furry Art Initiative</a> - An unofficial Geometry Dash site by furries, for furries</h2>
+      <h2><a href="https://mefinity.eu.org/zip">Is this a .ZIP or a .ZIP?</a> - Google launched a new TLD named ".zip" and that is problem.</h2>
+      <h2 id="ihi"><a href="https://gaycat.eu.org">gaycat.eu.org</a> - silly subomain for my friends bio :3</h2>
+      <h2><a href="https://mefinity.eu.org/voltage">Voltage</a> - Playing with KaTeX, mostly for Revolt </h2>
+      <h2><a href="https://mefinity.eu.org/DeadEngine">DeadEngine</a> - Silly little lifeengine thingy </h2>
+      <h2><a href="https://mefinity.github.io/MaPu">MaPu</a> - A Save Editor for Antimatter Dimensions</h2>
+    </div>
+  </div>
 
- <h1 style="text-decoration: underline;">Random Projects</h1>
- <div class="projects">
-  <h2>> <a href="http://mefinity.eu.org/zip">Is this a .ZIP or a .ZIP?</a> - Google launched a new TLD named ".zip" and that is problem.</h2>
-  <h2>> <a href="https://gaycat.eu.org">gaycat.eu.org</a> - Domain for my friends bio :3</h2>
-  <h2>> <a href="https://mefinity.github.io/DeadEngine">DeadEngine</a> - Silly little lifeengine thingy </h2>
-  <h2>> <a href="https://mefinity.github.io/MaPu">MaPU</a> - A Save Editor for Antimatter Dimensions</h2>
-</div>
+  <div id="tr">
+    <h1 style="font-size: 250%;">Translation</h1>
+    <h2 style="font-size: 160%;">I sometime translate project for the fun of it.<br>
+      You can check out what i'm doing on platforms like <a href="https://crowdin.com/MeFinity">Crowdin</a> or <a style="cursor: pointer;" onclick="trpop()">Weblate</a><br>
+      Also if you want me to translate your project(s) feel free to contact me</h2>
 
- <h1 style="text-decoration: underline;">Other Stuff</h1>
- <div class="projects">
-  <h2>> <a href="https://reddit.com/r/discordfakes">DiscordFakes</a> - A subreddit where you can upload edited/altered discord screenshots for the funny.</h2>
-  <h2>> <a href="https://twitter.com/ADiscordPreview">Discord Android Previews</a> - Stealing DiscordPreviews's job :nikohueh:</h2>
-  <h2>> <a href="https://youtube.com/@play-list">Playlister</a>|<a href="https://youtube.com/@pauselist">2</a> - Playlisting random peoples stuff </h2>
- </div>
+    <div id="trpopup">
+      <button class="button" onclick="trnop()">Back</button>
+      <iframe src="wbl.html"></iframe>
+    </div>
+    <h2 style="font-size: 160%;">I have translated projects like:</h2>
+
+    <div class="bg2">
+      <h1>Aves</h1>
+      <h2>Aves is a gallery and metadata explorer app. It is built for
+        Android, with Flutter. <a href="https://github.com/deckerst/Aves">Learn more.</a></h2>
+    </div>
+
+    <div class="bg2">
+      <h1>Aliucord Manager</h1>
+      <h2>Aliucord Installer rewrite in Kotlin and Jetpack Compose. <a href="https://github.com/Aliucord/AliucordManager">Learn more.</a></h2>
+    </div>
+
+    <div class="bg2">
+      <h1>Opencord</h1>
+      <h2>An open-source Material You implementation of the Discord
+        Android app. <a href="https://github.com/MateriiApps/OpenCord">Learn more.</a></h2>
+    </div>
+
+    <div class="bg2">
+      <h1>Gloom</h1>
+      <h2>A Material You GitHub Mobile client. <a href="https://github.com/MateriiApps/Gloom">Learn more.</a>
+      </h2>
+    </div>
+
+    <div class="bg2">
+      <h1>Hyperion</h1>
+      <h2>An alternative YouTube front-end. <a href="https://github.com/zt64/Hyperion">Learn more</a></h2>
+    </div>
+
+  </div>
+
+  <div id="ga">
+    <h1>Gaming</h1>
+    <h2>Just kidding i.. dont really play games...<br>The only game i play is like... <a href="https://gdbrowser.com/u/MeFinity">Geometry Dash</a> and i dont really play that anymore</h2>
+  </div>
+
+  <div id="mic">
+    <h1>Yes, i can assure you thay your eyes are burning, and no, you cant sue me</h1>
+    <h2>Hello, welcoem to the "misc" category, where dreams go to die, and hopes to be lost<br>
+      this place has nothing go away</h2>
+  </div>
+
+  <div id="mics">
+    <h1>Miscelaneous</h1>
+    <h2>Welcome to the Miscelaneous category, This place has random projects that couldnt be added in the other categories<br>
+      Check them out:</h2>
+
+    <div class="mpro">
+      <a href="https://github.com/bebasid/KominFudge">KominFudge</a>
+      <h2>A guide on how to access the Internet freely in Indonesia. it has now been acquired by bebasid on May 24th 2023<br>
+        I am now in the bebasid team as a KominFudge repository manager, and Frontend developer</h2>
+    </div>
+
+    <div class="mpro">
+      <a href="https://reddit.com/r/discordfakes">DiscordFakes</a>
+      <h2>A subreddit where you can upload edited/altered discord screenshots for the funny.</h2>
+    </div>
+
+    <div class="mpro">
+      <a href="https://twitter.com/ADiscordPreview">Android Discord Previews</a>
+      <h2>Stealing DiscordPreviews's job :nikohueh:</h2>
+    </div>
+
+    <div class="mpro">
+      <a><a href="https://youtube.com/@play-list">Playlister</a> and <a href="https://youtube.com/@pauselist">Pauselister</a></a>
+      <h2>Playlisting random peoples stuff</h2>
+    </div>
+  </div>
+
+  <div id="base">
+    <h1>Socials</h1>
+    <h2>You can contact me via these :3</h2>
+    <h3>Discord: <a href="https://discord.com/users/603501958812401674">.me.</a>
+    </h3>
+    <h3>Twitter: <a href="https://twitter.com/MeFinity">MeFinity</a>
+    </h3>
+    <h3>Mastodon: <a href="https://mastodon.social/@mefinity">MeFinity</a> | <a style="color: #EE0000" href="https://mstdn.id/@mefinity">ID</a></h3>
+    <h3>Reddit: <a href="https://reddit.com/Me_Finity">Me_Finity</a>
+    </h3>
+    <h3 class="dead">Instagram: <a href="https://instagram.com/me_finity">me_finity</a></h3>
+    <h3 class="dead">Youtube: <a href="https://youtube.com/@w.4">DoubleUFour</a></h3>
+    <h3 class="dead">Twitch: <a href="https://twitch.tv/me_finity">Me_Finity</a></h3>
+    <h3>Email: <a href="mailto:contact@mefinity.eu.org">contact@mefinity.eu.org</a>
+    </h3>
+
+    <footer>This site is <a href="https://github.com/MeFinity/mefinity.github.io">open source</a>. Stuff used:<br>
+    <a href="https://fontawesome.com">FontAwesome</a> and <a href="https://devicon.dev">DevIcon</a> for Icons<br>
+    <a href="https://colorkit.co">Colorkit</a> for Color Ideas<br>
+    <a href="https://css-gradient.com">CSS-Gradient</a> for Gradients<br>
+    <a href="https://beautifier.io">js-beauty</a> for Making my code more bareable to look at<br>
+    <a href="https://stackoverflow.com">Stackoverflow</a> for being a G<br>
+    <a href="/old">The old site</a> for being a base</footer>
+  </div>
+
+  </div>
 
 </body>
 

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #21252b;
+  color: #949AA3;
+}
+
+h1 {
+  color: white;
+}
+
+span,
+a {
+  color: #57BC5C;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: #40a045;
+}
+
+.button {
+  font-family: "Noto Sans SC", sans-serif;
+  font-weight: 500;
+  background-color: #40a045;
+  font-size: 17px;
+  color: white;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 14px 16px;
+  word-break: break-all;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  margin: 2px;
+}
+
+.button:hover {
+  background-color: #57bc5c;
+}
+
+.button:active,
+.trs {
+  background-color: #388e3c;
+  color: #000;
+}
+
+.bg2 {
+  background-color: #1a1c20;
+  border-color: #1a1c20;
+  border-radius: 15px;
+  padding: 15px 15px;
+  margin-bottom: 20px;
+}
+
+#trpopup {
+  text-align: center;
+  display: none;
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#trpopup iframe {
+  width: 50%;
+  height: 100%;
+  margin: 0% auto;
+  display: block;
+  border: #40a045;
+  border-style: solid;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 540px) {
+  #trpopup iframe {
+    width: 100%;
+  }
+}
+
+#base,
+#ga,
+#dv,
+#mic,
+#mics {
+  display: none;
+}
