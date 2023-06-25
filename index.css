@@ -70,6 +70,15 @@ span {
   color: #8400FF;
 }
 
+#base .id {
+  color: #EE0000;
+}
+
+#base .id:hover,
+#base .id:active {
+  color: #ffffff;
+}
+
 .dead {
   color: #1b1b1b;
   text-decoration: line-through;
@@ -82,6 +91,26 @@ footer {
   border-color: #020108;
   border-radius: 5px;
   padding: 10px 10px;
+}
+
+@media screen and (max-width: 799px) {
+  h1 {
+    font-size: 175%;
+  }
+
+.button {
+  font-size: 14px;
+  margin: 2px;
+}
+
+#base h3 {
+  font-size: 21px;
+}
+
+footer {
+  font-size: 90%;
+  opacity: 90%;
+}
 }
 
 #bb,

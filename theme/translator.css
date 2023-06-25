@@ -80,6 +80,15 @@ a:active {
   }
 }
 
+  @media screen and (max-width: 799px) {
+    body {
+      font-size: 80%;
+    }
+    .bg2 {
+      font-size: 105%;
+    }
+  }
+
 #base,
 #ga,
 #dv,

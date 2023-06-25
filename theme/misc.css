@@ -62,6 +62,12 @@ span {
   color: #F3F;
 }
 
+@media screen and (max-width: 799px) {
+  body {
+    font-size: 85%;
+  }
+}
+
 #base,
 #tr,
 #ga,

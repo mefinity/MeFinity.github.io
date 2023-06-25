@@ -41,6 +41,12 @@ a:hover {
   background-color: #cc173e;
 }
 
+@media screen and (max-width: 799px) {
+  body {
+    font-size: 92%;
+  }
+}
+
 #base,
 #dv,
 #tr,

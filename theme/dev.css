@@ -41,12 +41,12 @@ body {
   }
 }
 
-.pro a {
+.pro a, .gng a {
   color: #AA33FF;
   text-decoration: none;
 }
 
-.pro a:hover {
+.pro a:hover, .gng a:hover {
   color: #CC55FF;
 }
 
@@ -68,6 +68,28 @@ body {
 
 .button:hover::before {
   height: 100%;
+}
+
+.languagesize {
+  font-size: 45px;
+}
+
+.gng {
+  color: white;
+}
+
+.gng i {
+  font-size: 140%;
+}
+
+@media screen and (max-width: 799px) {
+  body {
+    font-size: medium;
+  }
+
+  .languagesize {
+    font-size: 35px;
+  }
 }
 
 #base,

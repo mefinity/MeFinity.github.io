@@ -77,3 +77,34 @@ function insanity() {
   ct.setAttribute("href", "/theme/misc.css");
   localStorage.setItem('kaboom', 'insanity');
 }
+
+var typedString = "";
+var rainbowColors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+var currentIndex = 0;
+
+document.addEventListener('keydown', function(event) {
+  var key = event.key.toLowerCase();
+  typedString += key;
+
+  if (typedString.includes("gay")) {
+    var elements = document.querySelectorAll('*');
+    var intervalId = setInterval(function() {
+      for (var i = 0; i < elements.length; i++) {
+        if (elements[i].classList.contains('button')) {
+          elements[i].style.transitionDuration = '200ms';
+          elements[i].style.color = rainbowColors[currentIndex];
+          elements[i].style.backgroundColor = 'transparent';
+          elements[i].style.borderColor = rainbowColors[currentIndex];
+        } else if (elements[i].classList.contains('mpro')) {
+          elements[i].style.backgroundColor = 'transparent';
+          elements[i].style.transitionDuration = '200ms';
+        } else {
+          elements[i].style.transitionDuration = '200ms';
+          elements[i].style.color = rainbowColors[currentIndex];
+          elements[i].style.borderColor = rainbowColors[(currentIndex + 1) % rainbowColors.length];
+        }
+      }
+      currentIndex = (currentIndex - 1 + rainbowColors.length) % rainbowColors.length;
+    }, 200);
+  }
+});
