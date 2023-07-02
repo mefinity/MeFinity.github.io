@@ -41,9 +41,28 @@ a:hover {
   background-color: #cc173e;
 }
 
+#saweria {
+  background-color: #FA1E4E;
+  color: #000;
+  font-size: 100%;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #FA1E4E;
+  display: inline;
+  box-shadow: 0.3rem 0.3rem 0 #cc173e;
+  transition: box-shadow 0.1s, transform 0.2s;
+}
+
 @media screen and (max-width: 799px) {
   body {
     font-size: 92%;
+  }
+
+  #saweria {
+    font-size: 75%;
   }
 }
 

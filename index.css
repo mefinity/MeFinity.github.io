@@ -93,6 +93,22 @@ footer {
   padding: 10px 10px;
 }
 
+#saweria {
+  background-color: #6fa3e7;
+  color: #FFF;
+  font-size: 100%;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #6fa3e7;
+  border-radius: 0.4rem;
+  display: inline;
+  box-shadow: 0.3rem 0.3rem 0 #6fa3e752;
+  transition: box-shadow 0.1s, transform 0.2s;
+}
+
 @media screen and (max-width: 799px) {
   h1 {
     font-size: 175%;
@@ -111,6 +127,10 @@ footer {
   font-size: 90%;
   opacity: 90%;
 }
+}
+
+#saweria {
+  font-size: 70%;
 }
 
 #bb,

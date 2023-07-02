@@ -74,6 +74,22 @@ a:active {
   border-radius: 15px;
 }
 
+#saweria {
+  background-color: #40a045;
+  color: #FFF;
+  font-size: 100%;
+  padding-top: 0.8rem;
+  padding-bottom: 0.8rem;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #40a045;
+  border-radius: 0.4rem;
+  display: inline;
+  box-shadow: 0.3rem 0.3rem 0 #388e3c;
+  transition: box-shadow 0.1s, transform 0.2s;
+}
+
 @media only screen and (max-width: 540px) {
   #trpopup iframe {
     width: 100%;
@@ -87,6 +103,11 @@ a:active {
     .bg2 {
       font-size: 105%;
     }
+
+    #saweria {
+      font-size: 85%;
+    }
+    
   }
 
 #base,
