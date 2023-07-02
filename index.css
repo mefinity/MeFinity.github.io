@@ -130,7 +130,28 @@ footer {
 }
 
 #saweria {
-  font-size: 70%;
+  font-size: 80%;
+}
+
+@media screen and (max-width: 440px) {
+  #saweria {
+    font-size: 65%;
+    padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  padding-inline-start: 0.7rem;
+  padding-inline-end: 0.7rem;
+  margin-bottom: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #saweria {
+    padding: 0 0 0 0;
+    font-size:120%;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: 0 0 0 transparent;
+  }
 }
 
 #bb,

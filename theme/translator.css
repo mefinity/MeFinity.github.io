@@ -105,9 +105,18 @@ a:active {
     }
 
     #saweria {
-      font-size: 85%;
+      font-size: 95%;
     }
-    
+  }
+
+  @media screen and (max-width: 440px) {
+    #saweria {
+      padding: 0 0 0 0;
+      font-size:120%;
+      background-color: transparent;
+      border-color: transparent;
+      box-shadow: 0 0 0 transparent;
+    }
   }
 
 #base,
