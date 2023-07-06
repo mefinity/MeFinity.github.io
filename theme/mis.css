@@ -29,22 +29,6 @@ body {
   color: transparent;
 }
 
-#saweria {
-  background-color: #FF01F4;
-  color: #FF01F4;
-  font-size: 100%;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  padding-inline-start: 1rem;
-  padding-inline-end: 1rem;
-  margin-bottom: 0.8rem;
-  border: 1px solid #FF01F4;
-  border-radius: 0.4rem;
-  display: inline;
-  box-shadow: 0.3rem 0.3rem 0 #FF01F4;
-  transition: box-shadow 0.1s, transform 0.2s;
-}
-
 #base,
 #dv,
 #ga,

@@ -62,37 +62,12 @@ span {
   color: #F3F;
 }
 
-#saweria {
-  background-color: transparent;
-  color: #4f5bb9;
-  font-size: 100%;
-  padding-top: 0.8rem;
-  padding-bottom: 0.8rem;
-  padding-inline-start: 1rem;
-  padding-inline-end: 1rem;
-  margin-bottom: 0.8rem;
-  border: 2px solid #1100ff;
-  border-radius: 20px;
-  display: inline;
-  transition: box-shadow 0.1s, transform 0.2s;
-}
-
 @media screen and (max-width: 799px) {
   body {
     font-size: 85%;
   }
   #saweria {
     font-size: 85%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  #saweria {
-    padding: 0 0 0 0;
-    font-size:120%;
-    background-color: transparent;
-    border-color: transparent;
-    box-shadow: 0 0 0 transparent;
   }
 }
 
