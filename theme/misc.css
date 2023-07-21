@@ -48,20 +48,6 @@ span {
   transition-duration: 5s;
 }
 
-.mpro:hover {
-  background-color: rgb(158, 34, 158);
-  border-color: rgb(158, 34, 158);
-  transition-duration: 40s;
-}
-
-.mpro:hover a {
-  color: #F3F;
-}
-
-.mpro:hover h2 {
-  color: #F3F;
-}
-
 @media screen and (max-width: 799px) {
   body {
     font-size: 85%;
